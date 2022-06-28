@@ -1,12 +1,13 @@
 #!/usr/bin/python3
+"""
+This program define a LockedClass that you only can set
+the attribute first_name
+"""
 
-"""Defines a locked class."""
 
-
-class LockedClass:
+class LockedClass():
     """
-    Prevent the user from instantiating new LockedClass attributes
-    for anything but attributes called 'first_name'.
+    This class is Locked and you can only put the attribute first_name
     """
 
-    __slots__ = ["first_name"]
+    __slots__ = ('first_name', )
